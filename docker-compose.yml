@@ -3,7 +3,7 @@ services:
   db-app:
     image: mysql:8.0
     ports:
-      - "3306:3306"
+      - '3306:3306'
     environment:
       MYSQL_DATABASE: PetitionAppDB
       MYSQL_ROOT_PASSWORD: secret
@@ -18,7 +18,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-        - "9090:8081"
+        - '9090:8081'
     depends_on:
         - db-app
     environment:
