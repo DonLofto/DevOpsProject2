@@ -30,7 +30,7 @@ FROM openjdk:17
 COPY --from=build /app/target/project.war app.war
 
 # The 'EXPOSE' instruction informs Docker that the container listens on the specified network ports at runtime.
-# Here, we are exposing port 8081.
+# Here, we are exposing port 8081...
 EXPOSE 9090
 
 # The 'CMD' instruction provides defaults for an executing container.
