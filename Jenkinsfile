@@ -22,6 +22,9 @@ pipeline {
         stage('Checkout') {
             steps {
                 sh 'git clone https://github.com/DonLofto/DevOpsProject.git ${WORKSPACE_DIR}'
+                sh 'ls -la ${WORKSPACE_DIR}' // List the directory contents
+                sh 'cat ${WORKSPACE_DIR}/docker-compose.yml' // Print the docker-compose file to check its content
+
             }
         }
 
